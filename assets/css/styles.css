@@ -1,4 +1,22 @@
 /* styles.css */
+:root {
+	/* CSS HEX */
+--deep-sky-blue: #2ec0f9ff;
+--cool-horizon: #67aaf9ff;
+--baby-blue-ice: #9bbdf9ff;
+--pale-sky: #c4e0f9ff;
+--fuchsia-plum: #b95f89ff;
+
+}
+
+html,
+body {
+	background-color: var(--pale-sky);
+}
+
+h1 {
+	color: var(--fuchsia-plum);
+}
 
 * {
 	font-family: Arial;
