@@ -1,12 +1,10 @@
 /* styles.css */
 :root {
-	/* CSS HEX */
---deep-sky-blue: #2ec0f9ff;
---cool-horizon: #67aaf9ff;
---baby-blue-ice: #9bbdf9ff;
---pale-sky: #c4e0f9ff;
---fuchsia-plum: #b95f89ff;
-
+	--deep-sky-blue: #2ec0f9ff;
+	--cool-horizon: #67aaf9ff;
+	--baby-blue-ice: #9bbdf9ff;
+	--pale-sky: #c4e0f9ff;
+	--fuchsia-plum: #b95f89ff;
 }
 
 html,
@@ -14,10 +12,50 @@ body {
 	background-color: var(--pale-sky);
 }
 
-h1 {
-	color: var(--fuchsia-plum);
+.simple-wrapper {
+	max-width: 1000px;
 }
 
+.masthead-title {
+	color: var(--fuchsia-plum);
+	font-weight: 700;
+	letter-spacing: 0.02em;
+}
+
+/* Thicker columns: min-width so they don’t get skinny, padding for weight */
+.two-cols {
+	--col-gap: 2rem;
+	gap: var(--col-gap);
+}
+.col-block {
+	min-width: 0;
+	padding: 1.5rem;
+	background: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+@media (min-width: 768px) {
+	.col-block {
+		min-width: 280px;
+		padding: 2rem;
+	}
+}
+
+h1, h2, h3, h4 {
+	font-family: Arial, sans-serif;
+}
+h2 {
+	color: var(--fuchsia-plum);
+	font-size: 1.25rem;
+	margin-bottom: 0.75rem;
+}
 * {
-	font-family: Arial;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+img.img-fluid,
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
 }

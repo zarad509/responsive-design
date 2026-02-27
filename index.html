@@ -3,25 +3,93 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Website Template</title>
+	<title>A cool blog</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+	<div class="container py-4">
 
-	<h1>Website Template</h1>
-	<p>Fork and use this template repo (a.k.a. "boilerplate") for any web project</p>
-	<img src="assets/img/cat.jpg" alt="">
-	<p> <button class="btn btn-primary">Click me</button> </p>
-	<p> <button type="button" class="btn btn-secondary">Secondary</button></p>
-	<p> <button type="button" class="btn btn-success">Success</button></p>
-	<p> <button type="button" class="btn btn-danger">Danger</button></p>
-	<p> <button type="button" class="btn btn-warning">Warning</button></p>
-	<p> <button type="button" class="btn btn-info">Info</button></p>
-	<p> <button type="button" class="btn btn-light">Light</button></p>
-	<p> <button type="button" class="btn btn-dark">Dark</button></p>
-	<p> <button type="button" class="btn btn-link">Link</button></p>
+		<!-- Header -->
+		<header class="text-center mb-5">
+			<h1 class="masthead-title">A really cool blog</h1>
+			<p class="text-muted mb-0"><em> Internet Studio</em></p>
+		</header>
 
+		<!-- MAIN ROW !_!_!___! DONT TOUCH -->
+		<div class="row g-4"> <!-- g- changes spacing-->
+
+			<!-- ================= _!__!_!__!_!_!__! LEFT COLUMN _!__!__!_!__! ================= -->
+			<div class="col-12 col-md-6"> <!-- -6 because bootstrap has 12 columns totals and you're taking up spaces of 6 which means.. 2 columns-->
+
+				<!-- _+_+_+_+_+ Nested row inside Left column !+!+!++! -->
+				<div class="row g-4">
+
+					<!-- left 1-->
+					<div class="col-12">
+						<div class="p-3 border rounded col-block">
+							<h2>Are you feeling lucky?</h2>
+							<img class="img-fluid mb-2" src="assets/img/clover.jpg" alt="A clover">
+							<p>What is luck?</p>
+						</div>
+					</div>
+
+					<!-- left 2 -->
+					<div class="col-12">
+						<div class="p-3 border rounded col-block">
+							<h2>Dragonflies are cool</h2>
+							<img class="img-fluid mb-2" src="assets/img/dragonfly.jpg" alt="Dragonfly">
+							<p>They're like little helicopters.</p>
+						</div>
+					</div>
+
+					<!-- <div class="col-12">
+						<div class="p-3 border rounded col-block">
+							<h2>Dragonflies are cool</h2>
+							<img class="img-fluid mb-2" src="assets/img/dragonfly.jpg" alt="Dragonfly">
+							<p>They're like little helicopters.</p>
+						</div>
+					</div> -->
+
+					<!-- Add more left column crap here, just copy paste divs above-->
+					
+
+				</div>
+			</div>
+
+			<!-- ================= !_!_!__!_!_!_ RIGHT COLUMN !_!!_!__!_!__!_!_!================= -->
+			<div class="col-12 col-md-6">
+
+				<!-- nested row inside right -->
+				<div class="row g-4">
+
+					<!-- right 1 -->
+					<div class="col-12">
+						<div class="p-3 border rounded col-block">
+							<h2>Uhhh</h2>
+							<img class="img-fluid mb-2" src="assets/img/comic.jpg" alt="Comic">
+							<p>You have the power to be great!</p>
+						</div>
+					</div>
+
+					<!-- right 2 -->
+					<div class="col-12">
+						<div class="p-3 border rounded col-block">
+							<h2>Meow</h2>
+							<img class="img-fluid mb-2" src="assets/img/cat.jpg" alt="Cat">
+							<p>Cats are fluffy.</p>
+						</div>
+					</div>
+
+					<!-- Add more left column crap here, just copy paste divs above-->
+
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/main.js"></script>
